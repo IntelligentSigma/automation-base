@@ -1,0 +1,51 @@
+{
+  "default":{
+    "baseHost":"google.com",
+    "beforeLaunchLogin" : false,
+    "devKey":"devKey is here",
+    "globalTimeout":20000,
+    "license": "BSD-2-Clause",
+    "localCode" : false,
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/IntelligentSigma/automation-base.git"
+    },
+    "runInParallel":true,
+    "suites" : {
+      "assertions" : ["tests/assertions/*.js"]
+    }
+  },
+
+  "languageArray":{
+    "languages":["en","es","fr"]
+  },
+
+  "languageObjectArray":{
+    "languages": [
+      {"name": "english", "browserCode":"en", "nameForm": "en"},
+      {"name": "spanish", "browserCode":"es", "nameForm": "es"},
+      {"name": "korean", "browserCode":"ko", "nameForm": "ko-Hani"}]
+  },
+
+  "languageQuery":{
+    "languages": {
+      "filters" : ["core"],
+      "synotypic" : true
+    }
+  },
+
+  "multiplexNameForm":{
+    "languages": {
+      "locale" : ["ko"],
+      "multiplex" : "nameForm"
+    }
+  },
+
+  "multiplexBrowserCode":{
+    "languages": {
+      "locale" : ["pt"],
+      "multiplex" : "browserCode"
+    }
+  }
+
+}

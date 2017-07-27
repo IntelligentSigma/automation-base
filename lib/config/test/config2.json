@@ -1,0 +1,26 @@
+{
+  "default":{
+    "baseHost":"google.com***",
+    "devKey":"devKey is here***",
+    "globalTimeout":20001,
+    "repository": {
+      "type": "git*",
+      "url": "https://github.com/IntelligentSigma/automation-base.git"
+    },
+    "license": "BSD-2-Clause*",
+    "runInParallel":false,
+    "suites" : {
+      "all" : ["tests/*/*.js*"]
+    }
+  },
+  "sauce":{
+    "environment":"[{\"browserName\":\"chrome\",\"name\":\"Chrome browser\"}]*",
+    "sauceUser": "sauceUser is here*",
+    "sauceKey":"sauceKey is here*",
+    "location":"SAUCE*"
+  },
+
+  "int":{
+    "baseHost": "google.com*"
+  }
+}

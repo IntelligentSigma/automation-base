@@ -1,0 +1,14 @@
+{
+  "baseHost":"google.com",
+  "devKey":"devKey is here",
+  "globalTimeout":20000,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IntelligentSigma/automation-base.git"
+  },
+  "license": "BSD-2-Clause",
+  "runInParallel":true,
+  "suites" : {
+    "all" : ["tests/*/*.js"]
+  }
+}

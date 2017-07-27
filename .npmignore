@@ -1,9 +1,7 @@
 node_modules
-coverage
 target
 .DS_Store
 builtAssets
-reports
 .s3creds
 .monitor
 *.esproj
@@ -14,7 +12,4 @@ reports
 npm-debug.log
 .idea
 .env
-.env-int
-.env-beta
 /nbproject/
-lib/config/localConfig.json

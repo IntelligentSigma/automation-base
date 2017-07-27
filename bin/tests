@@ -1,0 +1,10 @@
+#! /bin/bash
+
+# fail fast
+set -o errexit
+set -o pipefail
+
+./node_modules/.bin/istanbul cover node_modules/mocha/bin/_mocha -- lib/config/test/testConfig-test.js
+./node_modules/.bin/istanbul cover node_modules/mocha/bin/_mocha -- lib/config/test/testConfig-languages-test.js
+
+echo Exit CODE: $?

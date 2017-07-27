@@ -1,0 +1,72 @@
+{
+  "default":{
+    "baseHost":"google.com",
+    "globalTimeout":20000,
+    "localCode" : false,
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/IntelligentSigma/automation-base.git"
+    },
+    "license": "BSD-2-Clause",
+    "runInParallel":true,
+    "suites" : {
+      "all" : ["tests/*/*.js"]
+    }
+  },
+
+  "sauce":{
+    "environment":"[{\"browserName\":\"chrome\",\"name\":\"Chrome browser\"}]",
+    "sauceUser": "sauceUser is here",
+    "sauceKey":"sauceKey is here",
+    "location":"SAUCE"
+  },
+
+    "cbt":{
+    "sauceUser": null,
+    "sauceKey": null,
+    "environment":"[{\"browserName\":\"firefox\",\"name\":\"FF browser\",\"browser_api_name\":\"FF45\",\"os_api_name\":\"Win7x64-C1\",\"record_video\":\"true\",\"record_network\":\"true\",\"record_snapshot\":\"true\",\"username\":\"someone@gmail.com\",\"password\":\"password\",\"screen_resolution\":\"1024x768\"}]",
+    "seleniumAddress": "http://STUFF@hub.crossbrowsertesting.com:80/wd/hub"
+  },
+
+  "envObj":{
+    "environment": [{
+      "browserName":"chrome",
+      "name":"chrome test"
+    }]
+  },
+
+  "int":{
+    "baseHost": "google.com"
+  },
+
+  "assertions":{
+    "suites" : {
+      "tests" : ["tests/assertions/*.js"]
+    }
+  },
+
+  "relationship":{
+    "suites" : {
+      "tests" : ["tests/relationship/*.js"]
+    }
+  },
+
+  "watch":{
+    "suites" : {
+      "tests" : ["tests/watch/*.js"]
+    }
+  },
+
+  "inDev": {
+    "suites" : {
+        "watch" : ["tests/source/createASourceNotAMatch.js"]
+    },
+    "environment":"[{\"browserName\":\"firefox\"}]"
+  },
+
+  "pubAcct": {
+    "accountType": "PUBLIC"
+  },
+
+  "dev":{}
+}
