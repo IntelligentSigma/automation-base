@@ -1,6 +1,6 @@
 {
   "name": "automation-base",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "keywords": ["util", "functional", "client", "browser"],
   "contributors": ["thorntonjn", "mamanakisdm", "dloder", "andersone"],
   "license": "CC-BY-SA-4.0",
@@ -22,7 +22,8 @@
     "protractor-flake": "2.1.2",
     "q": "^1.4.1",
     "automation-locale":"git+https://github.com/IntelligentSigma/automation-locale.git",
-    "selenium-webdriver": "2.53.2"
+    "selenium-webdriver": "2.53.2",
+    "superagent": "^1.7.0"
   },
   "devDependencies": {
     "mocha": "^2.5.3",
