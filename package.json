@@ -1,6 +1,6 @@
 {
   "name": "automation-base",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "keywords": ["util", "functional", "client", "browser"],
   "contributors": ["thorntonjn", "mamanakisdm", "dloder", "andersone"],
   "license": "CC-BY-SA-4.0",
