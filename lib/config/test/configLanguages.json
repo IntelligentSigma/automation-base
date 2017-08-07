@@ -2,7 +2,6 @@
   "default":{
     "baseHost":"google.com",
     "beforeLaunchLogin" : false,
-    "devKey":"devKey is here",
     "globalTimeout":20000,
     "license": "BSD-2-Clause",
     "localCode" : false,

@@ -1,7 +1,6 @@
 {
   "default":{
     "baseHost":"google.com***",
-    "devKey":"devKey is here***",
     "globalTimeout":20001,
     "repository": {
       "type": "git*",
